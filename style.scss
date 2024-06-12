@@ -35,6 +35,23 @@ body {
   background-color: #4caf50;
 }
 
+#toggleButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggleButton:active {
+  background-color: #45a049;
+}
+
 .night {
   position: fixed;
   left: 50%;
