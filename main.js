@@ -3,12 +3,23 @@ const backgroundAudio = new Audio("kesariya.mp3");
 onload = () => {
   const c = setTimeout(() => {
     document.body.classList.remove("not-loaded");
-    // backgroundAudio.play();
     clearTimeout(c);
   }, 1000);
 };
 
-backgroundAudio.play(); // Start playback (optional)
+window.addEventListener("click", () => {
+  backgroundAudio.play();
+});
+
+window.addEventListener("touchstart", () => {
+  backgroundAudio.play();
+});
+
+// window.onload = function () {
+//   backgroundAudio.play();
+// };
+
+// backgroundAudio.play(); // Start playback (optional)
 backgroundAudio.loop = true; // Loop the audio (optional)
 
 backgroundAudio.addEventListener("error", () => {
