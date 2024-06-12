@@ -1,0 +1,170 @@
+/* Define sunflower colors */
+/* Styles for flowers */
+.flowers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.flower {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  animation: updown 5s infinite;
+}
+.flower--1 {
+  animation-delay: 1s;
+}
+.flower--2 {
+  animation-delay: 2s;
+}
+.flower--3 {
+  animation-delay: 3s;
+}
+.flower__leafs {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  animation: blooming-flower 2s;
+}
+.flower__leafs--1 {
+  animation-delay: 1s;
+}
+.flower__leafs--2 {
+  animation-delay: 2s;
+}
+.flower__leafs--3 {
+  animation-delay: 3s;
+}
+.flower__leaf {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 40px;
+  margin-left: -12px;
+  margin-top: -20px;
+  background: #FFDA03;
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.flower__leaf--1 {
+  transform: rotate(45deg);
+  animation: blooming-leaf-right 1.2s forwards;
+}
+.flower__leaf--2 {
+  transform: rotate(135deg);
+  animation: blooming-leaf-left 1.2s forwards;
+}
+.flower__leaf--3 {
+  transform: rotate(225deg);
+  animation: blooming-leaf-right 1.2s forwards;
+}
+.flower__leaf--4 {
+  transform: rotate(315deg);
+  animation: blooming-leaf-left 1.2s forwards;
+}
+.flower__white-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-top: -12px;
+  background: #2B1B0E;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: blooming-flower 1.5s;
+}
+.flower__line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  background-image: linear-gradient(to top, #006400, transparent);
+  animation: growing-line 2s backwards;
+}
+@keyframes blooming-leaf-right {
+  0% {
+    transform: translate(-50%, 0%) rotateX(0deg);
+  }
+}
+@keyframes blooming-leaf-left {
+  0% {
+    transform: translate(-50%, 0%) rotateX(0deg) rotateY(0deg);
+  }
+}
+@keyframes growing-line {
+  0% {
+    height: 0;
+  }
+}
+@keyframes blooming-flower {
+  0% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+}
+@keyframes moving-flower-1 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes moving-flower-2 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes moving-flower-3 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.sky {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}/*# sourceMappingURL=style.css.map */
